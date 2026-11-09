@@ -1,0 +1,94 @@
+.footer {
+    background: var(--band);
+    color: var(--band-ink);
+    padding-block: 56px 28px;
+    scroll-margin-top: 70px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 32px;
+}
+
+.footer-tag {
+    margin-top: 12px;
+    color: var(--band-muted);
+    max-width: 30ch;
+}
+
+.footer h4 {
+    font: 400 16px/1.2 var(--font-pixel);
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #7fc4ff;
+    margin-bottom: 14px;
+}
+
+.footer address {
+    font-style: normal;
+    display: grid;
+    gap: 4px;
+    align-content: start;
+    color: var(--band-ink);
+}
+
+.footer address h4 {
+    margin-bottom: 10px;
+}
+
+.brand-light {
+    color: var(--band-ink);
+}
+
+.social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 12px 32px;
+}
+
+.social a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.social svg {
+    flex: none;
+}
+
+.brand-light,
+.footer-tag,
+.footer address p,
+.social a,
+.footer-bottom span {
+    transition: color .2s, transform .2s;
+}
+
+.brand-light:hover,
+.footer-tag:hover,
+.footer address p:hover,
+.social a:hover,
+.footer-bottom span:hover {
+    color: var(--hover-blue);
+}
+
+.social a:hover {
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, .12);
+    color: var(--band-muted);
+    font-size: 14px;
+    text-align: center;
+}

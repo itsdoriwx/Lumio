@@ -1,0 +1,96 @@
+.guide-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 24px;
+    margin-top: 22px;
+}
+
+.guide-card,
+.guide-list {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    padding: 26px;
+    min-width: 0;
+}
+
+.guide-card {
+    display: grid;
+    gap: 14px;
+    align-content: start;
+}
+
+.guide-card h3 {
+    font-size: 24px;
+}
+
+.guide-card p:not(.spec) {
+    color: var(--muted);
+}
+
+.kscale {
+    margin-top: 8px;
+}
+
+.kscale-bar {
+    position: relative;
+    height: 12px;
+    border-radius: 99px;
+    background: linear-gradient(90deg, #ffb066, #ffcd94 22%, #ffead0 42%, #e2eeff 65%, #96c6ff);
+}
+
+.kscale-zone {
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    border-radius: 99px;
+    border: 3px solid var(--ink);
+    background: rgba(255, 255, 255, .18);
+    transition: left .35s ease, width .35s ease;
+}
+
+.kscale-ticks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font: 400 11px var(--font-mono);
+    color: var(--muted);
+}
+
+.guide-count {
+    font: 500 12px var(--font-mono);
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+}
+
+.guide-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.guide-list li {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 0;
+    border-top: 1px solid var(--line);
+}
+
+.guide-list li:first-child {
+    border-top: 0;
+}
+
+.li-name {
+    display: grid;
+    min-width: 0;
+    font-weight: 700;
+}
+
+.li-name small {
+    font: 400 12px var(--font-mono);
+    color: var(--muted);
+}

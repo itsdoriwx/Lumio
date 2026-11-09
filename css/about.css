@@ -1,0 +1,59 @@
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text {
+    margin-top: 18px;
+    max-width: 56ch;
+    color: var(--muted);
+    font-size: 17px;
+}
+
+.facts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+}
+
+.facts li {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 22px;
+    border-radius: 18px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    transition: transform 0.25s ease, border-color 0.25s, box-shadow 0.25s, background 0.25s;
+}
+
+.facts li:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    background: var(--surface);
+    box-shadow: 0 0 0 1px var(--accent), 0 14px 34px -14px var(--accent);
+}
+
+.facts li:hover span {
+    color: var(--ink);
+}
+
+.facts span {
+    color: var(--muted);
+    text-align: right;
+    transition: color 0.25s;
+}
+
+.facts b {
+    font-weight: 500;
+    font-size: 26px;
+    font-family: var(--font-display);
+    font-variant-numeric: tabular-nums;
+    color: var(--accent);
+    white-space: nowrap;
+}
